@@ -48,6 +48,16 @@
       transform: scale(1.5);
       cursor: pointer;
     }
+    img:hover{
+      animation: glowcolors 1.2s infinite alternate;
+    }
+    @keyframes glowcolors{
+      0% {box-shadow: 0 0 20px hotpink;}
+      25% {box-shadow: 0 0 20px skyblue;}
+      50% {box-shadow: 0 0 20px gold;}
+      75% {box-shadow: 0 0 20px violet;}
+      100% {box-shadow: 0 0 20px red;}
+    }
     header{
       background: linear-gradient(#98FB98, lightpink, lightskyblue);
       padding: 30px;
